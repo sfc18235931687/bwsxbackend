@@ -143,3 +143,6 @@ STATIC_URL = '/static/'
 # 设置media的保存路径
 MEDIA_URL="/media/"
 MEDIA_ROOT=os.path.join(BASE_DIR,"media")
+
+#重载系统的用户，让UserProfile生效
+AUTH_USER_MODEL = 'users.UserProfile'
